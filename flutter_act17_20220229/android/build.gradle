@@ -29,16 +29,4 @@ tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
 
-subprojects {
-    afterEvaluate {
-        android {
-            defaultConfig {
-                applicationId "com.example.google_maps_in_flutter"
-                minSdkVersion 20
-                targetSdkVersion 30
-                versionCode flutterVersionCode.toInteger()
-                versionName flutterVersionName
-            }
-        }
-    }
-}
+
